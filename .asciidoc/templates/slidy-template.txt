@@ -1,4 +1,4 @@
-:backend: slidy5
+:backend: slidy2
 :icons:
 :iconsdir: /home/peter/.asciidoc/backends/slidy2/images/icons
 :title: Change Me
