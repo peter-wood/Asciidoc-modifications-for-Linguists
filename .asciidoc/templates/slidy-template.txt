@@ -1,0 +1,87 @@
+:backend: slidy5
+:icons:
+:iconsdir: /home/peter/.asciidoc/backends/slidy2/images/icons
+:title: Change Me
+
+= {title}
+
+// Setting defaults, don't change!
+
+//begin.rcode setDefaults, echo=FALSE, message=FALSE
+opts_chunk$set(prompt=TRUE, results="asis", message=FALSE, warning=FALSE, dev="svg", fig.cap="R Plot")
+library(ascii)
+print <- function(x) {
+    ascii(x)
+}
+//end.rcode
+
+// End defaults
+// Put your code here
+
+
+
+
+// End code
+
+
+//// 
+
+Here are some examples to copy and paste:
+
+== R Code, output, and plots
+
+//begin.rcode 
+x <- rnorm(10)
+y <- rnorm(10)
+print(summary(x))
+plot(x,y)
+//end.rcode
+
+== Formulas
+
+["ling"]
+----
+$E=MC^2$
+----
+
+["ling"]
+----
+\begin{equation}
+    \frac{\sigma}{\sqrt{n}}
+    \sum_{i=0}^{n} \alpha_i
+\end{equation}
+----
+
+== Syntax Trees
+
+["ling"]
+----
+\Tree [.S [.NP [.N John ] ] [.VP [.V snores ] ] ]
+----
+
+== Glosses (numbered)
+
+["ling"]
+----
+\begin{exe}
+  \ex
+  \gll Ich helfe dem alten Mann.\\
+  Nom.1.Pr.Sg V.1.Pr.Sg Def.Art.Dat.Sg Adj.Dat.Sg Dat.Sg\\
+  \trans ` I'm helping the old man'
+\end{exe}
+----
+
+== Glosses (plain)
+
+["ling"]
+----
+\begin{exe}
+  \sn
+  \gll Ich helfe dem alten Mann.\\
+  Nom.1.Pr.Sg V.1.Pr.Sg Def.Art.Dat.Sg Adj.Dat.Sg Dat.Sg\\
+  \trans ` I'm helping the old man'
+\end{exe}
+----
+
+////
+

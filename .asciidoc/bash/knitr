@@ -1,0 +1,15 @@
+#!/usr/bin/bash
+if [[ $# -ne 1 ]]
+then
+    echo "Provide a file name"
+    exit 1
+fi
+
+if [[ $1 != *txt ]]
+then
+    echo "file needs to have txt extension"
+    exit 1
+fi
+
+Rscript -e "library(knitr); knit('$1', '${1%txt}asciidoc')"
+

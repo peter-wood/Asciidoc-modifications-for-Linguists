@@ -1,0 +1,21 @@
+#!/usr/bin/bash
+if [[ $# -eq 1 ]]
+then
+    case $1 in
+        --slidy)
+            name="slidy-template.txt"
+            ;;
+        --html)
+            name="html5-template.txt"
+            ;;
+        *)
+            echo "possible arguments: slidy, html"
+            exit 1
+            ;;
+    esac
+else
+    name="html5-template.txt"
+fi
+
+cp ~/.asciidoc/templates/$name .
+exit 0

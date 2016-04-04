@@ -1,0 +1,47 @@
+/* empty color set styles */
+.empty { background-color: black; }
+.empty a:link, .empty a:visited, .empty a:hover, .empty a:active { color: gray; text-decoration: underline }
+.empty a:hover { color: red; text-decoration: underline }
+.empty div.slide { color: silver; }
+.empty span, .empty caption, .empty th { color: silver; }
+.empty div.slide h1,h2,h3,h4,h5,h6 { color: white;}
+.empty em, .empty strong { color: #999999;}
+.empty tt { color: blue;}
+.empty div.sidebarblock, .empty div.literalblock, .empty div.listingblock, .empty div.exampleblock, .empty div.title { color: black; }
+.empty div.admonitionblock, .empty div.quoteblock, .empty div.verseblock {  color: black; }
+.empty div.cover.slide, .empty div.cover.slide h1 { background-color: black; }
+
+/* blue color styles */
+.blue { background-color: navy;}
+.blue a:link, .blue a:visited, .blue a:hover, .blue a:active { color: yellow; text-decoration: underline }
+.blue a:hover { color: red; text-decoration: underline }
+.blue div.slide { background-color: navy; color: aqua;}
+.blue div.slide h1,h2,h3,h4,h5,h6 { color: aqua;}
+.blue em { color: blue;}
+.blue tt { color: blue;}
+.blue div.sidebarblock, .blue div.literalblock, .blue div.listingblock, .blue div.exampleblock, .blue div.title { color: teal;}
+.blue div.admonitionblock { color: teal;}
+
+/* green color styles */
+.new { background-color: #449900;}
+.new a:link, .new a:visited, .new a:hover, .new a:active { color: fuchsia; text-decoration: underline }
+.new a:hover { color: red; text-decoration: underline }
+.new div.slide { color: yellow;}
+.new div.slide h1,h2,h3,h4,h5,h6 { color: lime;}
+.new em { color: orange;}
+.new tt { color: orange;}
+.new div.sidebarblock, .new div.literalblock, .new div.listingblock, .new div.exampleblock, .new div.title { color: #44ff00;}
+.new div.quoteblock, .new div.verseblock {  color: black; }
+.new div.admonitionblock { color: #88ff55;}
+
+/* rainbow color styles */
+.rain { background-color: #ffffaa;}
+.rain a:link, .rain a:visited, .rain a:hover, .rain a:active { color: blue; text-decoration: underline }
+.rain a:hover { color: red; text-decoration: underline }
+.rain div.slide { color: black;}
+.rain div.slide h1,h2,h3,h4,h5,h6 { color: orange;}
+.rain em { color: green;}
+.rain tt { color: green;}
+.rain div.sidebarblock, .rain div.literalblock, .rain div.listingblock, .rain div.exampleblock, .rain div.title { color: red;}
+.rain div.quoteblock, .rain div.verseblock {  color: black; }
+.rain div.admonitionblock { color: red;}
