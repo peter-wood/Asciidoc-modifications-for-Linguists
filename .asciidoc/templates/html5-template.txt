@@ -1,7 +1,7 @@
 :backend: html5
 :icons:
 :iconsdir: /home/peter/.asciidoc/backends/slidy2/images/icons
-:title: Change Me
+:title: T-Tests, Chi-Square
 
 = {title}
 
@@ -11,13 +11,16 @@
 opts_chunk$set(prompt=TRUE, results="asis", message=FALSE, warning=FALSE, dev="svg", fig.cap="R Plot")
 library(ascii)
 print <- function(x) {
-    ascii(x)
+    if (typeof(x) == "list" && !is.data.frame(x)) {
+        ascii(data.frame(unlist(x)), include.colname=FALSE, header=FALSE, format="nice")
+    } else {
+        ascii(x, digits=4, format="nice")
+    }
 }
 //end.rcode
 
 // End defaults
 // Put your code here
-
 
 
 

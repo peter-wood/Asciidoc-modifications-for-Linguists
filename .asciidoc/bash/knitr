@@ -12,4 +12,5 @@ then
 fi
 
 Rscript -e "library(knitr); knit('$1', '${1%txt}asciidoc')"
+asciidoc "${1%txt}asciidoc"
 
